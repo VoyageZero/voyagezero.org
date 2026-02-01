@@ -1,35 +1,35 @@
 * {
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-nav {
-    background-color: gray;
-}
-
-.nav-bar ul {
-    list-style: none;
-    display: flex;
-    gap: 3rem;
-}
-
-.nav-bar li {
-    padding: 1rem;
-}
-
-/* TODO: Fix links so they are square block instead of on text. */
-.nav-link {
-    color: red;
-    text-decoration: none;
-    text-transform: uppercase;
-}
-
-.nav-link:hover {
-    color: tomato;
-}
-
-.twitch-container {
-    padding: 4rem;
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
     display: flex;
     justify-content: center;
-    gap: 2rem;
+    align-items: center;
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+.container {
+    text-align: center;
+    padding: 20px;
+    max-width: 600px;
+    animation: fadeIn 1s ease-in;
+}
+
+h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    animation: slideDown 0.8s ease-out;
+}
+
+.subtitle {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    opacity: 0.9;
 }
