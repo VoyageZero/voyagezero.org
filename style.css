@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+}
+
+nav {
+    background-color: gray;
+}
+
+.nav-bar ul {
+    list-style: none;
+    display: flex;
+    gap: 3rem;
+}
+
+.nav-bar li {
+    padding: 1rem;
+}
+
+/* TODO: Fix links so they are square block instead of on text. */
+.nav-link {
+    color: red;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.nav-link:hover {
+    color: tomato;
+}
+
+.twitch-container {
+    padding: 4rem;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}

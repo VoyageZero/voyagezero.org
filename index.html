@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VoyageZero | Home</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav class="nav-bar">
+            <ul>
+                <li><a href="#" class="nav-link">Home</a></li>
+                <li><a href="#" class="nav-link">Projects</a></li>
+                <li><a href="#" class="nav-link">Solutions</a></li>
+                <li><a href="#" class="nav-link">Contact</a></li>
+            </ul>
+        </nav>
+    </header> 
+    <section>
+        <div class="twitch-container">
+            <div id="twitch-player"></div>
+            <iframe id="twitch-chat-embed"
+                src="https://www.twitch.tv/embed/voyagezero/chat&parent=localhost" 
+                height="720"
+                width="400">
+            </iframe>
+        </div>
+    </section>
+    <aside></aside>
+    <footer></footer>
+    <script src="https://player.twitch.tv/js/embed/v1.js"></script>
+
+    <script type="text/javascript">
+        new Twitch.Player("twitch-player", {
+            width: 1280,
+            height: 720,
+            channel: "voyagezero",
+            parent: ["voyagezero.org"],
+            muted: true,
+            autoplay: false
+        });
+    </script>
+</body>
+</html>
